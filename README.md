@@ -182,9 +182,9 @@
     header:
 
     ```
-    POST /api/v1/getValueCategory HTTP/1.1
+    POST /api/v1/assetSearch HTTP/1.1
     Content-Type: application/json;charset=UTF-8
-    Content-Length: 27
+    Content-Length: 128
     Authorization: Basic Og==
     Host: x.x.x.x:8361
     Connection: close
