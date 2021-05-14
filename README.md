@@ -6,6 +6,12 @@
 
   下列api基于账号密码为空，即每次请求api中存在请求头`Authorization: Basic Og==`
 
+  ### 分布式扫描
+
+  扫描样例，多个goby api agent配合合理的任务调度策略，即可实现分布式指纹识别/漏扫:
+  ![image](https://user-images.githubusercontent.com/26686336/116987827-1e033a80-ad02-11eb-8340-a1a793248122.png)
+  ![image](https://user-images.githubusercontent.com/26686336/116987964-5145c980-ad02-11eb-81ca-10c51cb1a494.png)
+
   ### 下发指纹识别任务
 
 - 即新建扫描任务->漏洞->禁用。若扫描对象为域名，则将请求body中ips字段值替换为域名列表
@@ -437,9 +443,5 @@ Transfer-Encoding: chunked
 ```
 
 
-### 分布式扫描
 
-多个goby api agent配合合理的任务调度策略，即可实现分布式指纹识别/漏扫:
-![image](https://user-images.githubusercontent.com/26686336/116987827-1e033a80-ad02-11eb-8340-a1a793248122.png)
-![image](https://user-images.githubusercontent.com/26686336/116987964-5145c980-ad02-11eb-81ca-10c51cb1a494.png)
 
